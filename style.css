@@ -1,0 +1,210 @@
+:root {
+    --clr-primary: #2962ff;
+    --clr-primary-hover: #0d47a1;
+    --clr-gray-med: #78909c;
+    --clr-gray-light: #cfd8dc;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+
+.progress-wrapper {
+    background-color: #555;
+    width: calc(300vw/4);
+    height: 4em;
+    border-radius: 30px;
+    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    margin-top:10em;
+}
+
+.grProgress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to top,#40DC52, rgba(64, 220, 82, 0.5));
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    transition: width 0.6s;
+}
+
+.blProgress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background: linear-gradient(to top,#578ee6, rgba(65, 100, 224, 0.5));
+    border-radius: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    transition: width 0.6s;
+}
+
+.btn {
+    width: 6em;
+    height: 2em;
+    font-size: 1.5em;
+    border: none;
+    background-color: #2962ff;
+    color: white;
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    border-radius: 0.2em;
+    outline: none;
+    transition: all 100ms ease-in;
+    position:relative;
+    align-self:end;
+}
+
+    .btn:active,
+    .btn:hover {
+        background-color: var(--clr-primary-hover);
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dedede;
+    min-width: 6em;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content button {
+        padding: 12px 16px;
+        width:100%;
+        text-decoration: none;
+        display: block;
+        border: none;
+        cursor: pointer;
+        color: #3b6bed;
+        font-size: large;
+        font-weight: bold;
+        background-color:#dedede;
+    }
+.dropdown button:hover {
+}
+
+.show {
+    display: block;
+}
+
+#mainDiv {
+}
+
+#barDiv {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    left: 50%;
+    top: 0%;
+}
+
+#div-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    align-content:center;
+    margin-bottom:1em;
+    justify-content:flex-start;
+    gap:2em;
+}
+
+#div-condition {
+    margin-bottom:20px;
+    display:flex;
+}
+
+.goalName {
+    color: #3b6bed;
+    font-size:large;
+    font-weight: bold;
+}
+
+H3 {
+    display:inline-block;
+    color: #3b6bed;
+    margin-right: 1em;
+}
+
+.weightNum {
+    max-width: 70px;
+    background-color: #666;
+    font-size: large;
+    color: #082b61;
+}
+
+.timeNum {
+    max-width: 40px;
+    background-color: #666;
+    font-size: large;
+    color: #082b61;
+}
+
+.perNum::-webkit-outer-spin-button,
+.perNum::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.perNum {
+    max-width: 40px;
+    background-color: #666;
+    font-size: large;
+    -moz-appearance: textfield;
+    color: #082b61;
+}
+
+input[type="checkbox"] {
+    margin-right: 3.7em;
+    margin-left:1em;
+    margin-top: 0.5em;
+    width: 20px;
+    height: 20px;
+}
+
+
+.checkgoal {
+    margin-right: 0.5em;
+    margin-top: 0.5em;
+    width: 20px;
+    height: 20px;
+}
+
+.delBtn {
+    width: 1em;
+    height: 1em;
+    font-size: 1.5em;
+    border: none;
+    background-color: #3e2af5;
+    color: white;
+    cursor: pointer;
+    font-family: "Comic Sans", sans-serif;
+    font-weight: bold;
+    border-radius: 0.2em;
+    outline: none;
+    transition: all 100ms ease-in;
+    margin-left: 5em;
+}
+    .delBtn:hover {
+        background-color: #2833d1;
+    }
